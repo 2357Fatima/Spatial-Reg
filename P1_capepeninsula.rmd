@@ -1,1 +1,32 @@
+---
+title: "P1_Regspas"
+author: "Kelompok 3-STA1271"
+date: "2025-08-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(sf)
+library(sp)
+library(spData)
+library(spatstat)
+library(terra)
+library(mapview)
+```
+
+```{r}
+setwd("D:\\TAHUN 3\\REGSPAS\\cape_peninsula")
+```
+
+```{r}
+library(ggplot2)
+d <- st_read("D:\\TAHUN 3\\REGSPAS\\cape_peninsula\\cape_peninsula\\veg")
+layer = "Vegetation_Indegenous"
+plot(d)
+```
+
 
